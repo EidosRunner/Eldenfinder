@@ -31,12 +31,6 @@ TechnologieUsageHTML / CSSStructure et mise en pageJavaScript (Vanilla)Logique d
 Les contributions sont les bienvenues ! Si tu remarques une localisation incorrecte, un item manquant ou un bug :
 
 
-Fork le dépôt
-Crée une branche (git checkout -b fix/nom-du-fix)
-Commit tes changements (git commit -m 'fix: correction localisation X')
-Push et ouvre une Pull Request
-
-
 ⚠️ Avertissement
 Ce projet est un outil communautaire non officiel, sans affiliation avec FromSoftware ou Bandai Namco. Elden Ring et tous ses contenus sont la propriété de leurs ayants droit respectifs.
 
