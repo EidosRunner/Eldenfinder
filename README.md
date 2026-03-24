@@ -40,3 +40,6 @@ Ce projet est sous licence MIT.
 
 
 Fait avec ❤️ par un Tarnished, pour les Tarnished.
+
+
+Mon figma: https://www.figma.com/design/YIpB2v5UJAJJ9YQhT3JeoR/EldenFinder?node-id=0-1&p=f&t=9W8TQcQwZHQO5qQb-0
