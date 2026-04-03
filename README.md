@@ -37,6 +37,7 @@ Ce projet est un outil communautaire non officiel, sans affiliation avec FromSof
 📜 Licence
 Ce projet est sous licence MIT.
 
+Mon figma : https://www.figma.com/design/YIpB2v5UJAJJ9YQhT3JeoR/EldenFinder?node-id=0-1&t=uZS8nqsGci5PsvvX-0
 
 Fait avec ❤️ par un Tarnished, pour les Tarnished.
 
