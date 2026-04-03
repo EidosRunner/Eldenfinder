@@ -5,16 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
+</head>
+
 
   <body>
+
     <p>Elden Ring</p>
     <!-- <img src="../image/téléchargé (1).jpg" alt="elden ring"> -->
     <p>Shadow of the erdtree</p>
     <!-- <img src="../image/NIGHTREIGN_launch-trailer.jpg" alt="nightreign"> -->
 
-    <footer>
+  
 
-    </footer>
   </body>
 </html>
