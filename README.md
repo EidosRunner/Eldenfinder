@@ -14,7 +14,7 @@ Trouver un item dans Elden Ring peut vite devenir une aventure en soi. Ce projet
 
 
 🛠️ Stack technique
-TechnologieUsageHTML / CSSStructure et mise en pageJavaScript (Vanilla)Logique de recherche et filtresBase de données (SQL/NoSQL)Stockage des données d'items
+Technologie Usage HTML / CSS Structure et mise en page Java Script (Vanilla) Logique de recherche et filtres Base de données (SQL/NoSQL) Stockage des données d'items
 
 
 🗺️ Roadmap
@@ -22,9 +22,8 @@ TechnologieUsageHTML / CSSStructure et mise en pageJavaScript (Vanilla)Logique d
  Recherche par nom d'item
  Filtres par catégorie
  Intégration de captures d'écran
- Carte interactive des localisations
  Support du DLC Shadow of the Erdtree
- Mode sombre / thème personnalisé
+ thème personnalisé
 
 
 🤝 Contribuer
@@ -38,6 +37,7 @@ Ce projet est un outil communautaire non officiel, sans affiliation avec FromSof
 📜 Licence
 Ce projet est sous licence MIT.
 
+Mon figma : https://www.figma.com/design/YIpB2v5UJAJJ9YQhT3JeoR/EldenFinder?node-id=0-1&t=uZS8nqsGci5PsvvX-0
 
 Fait avec ❤️ par un Tarnished, pour les Tarnished.
 
