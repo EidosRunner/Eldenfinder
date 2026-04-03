@@ -14,8 +14,5 @@
     <!-- <img src="../image/téléchargé (1).jpg" alt="elden ring"> -->
     <p>Shadow of the erdtree</p>
     <!-- <img src="../image/NIGHTREIGN_launch-trailer.jpg" alt="nightreign"> -->
-
-  
-
   </body>
 </html>
