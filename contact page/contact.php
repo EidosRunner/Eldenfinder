@@ -36,15 +36,7 @@
         <img src="#" alt="map">
     </figure>
     </main>
-   
-<footer>
-     <address>
-        <span>eldenFinder</span>
-        <span>EldenFinder@gmail.com</span>
-    </address>
-   
-</footer>
-   
 </body>
+
 </html>
  
