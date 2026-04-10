@@ -30,6 +30,9 @@ Technologie Usage HTML / CSS Structure et mise en page Java Script (Vanilla) Log
 Les contributions sont les bienvenues ! Si tu remarques une localisation incorrecte, un item manquant ou un bug :
 
 
+acces a mes persona: https://github.com/EidosRunner/Eldenfinder/blob/main/persona.md
+
+
 ⚠️ Avertissement
 Ce projet est un outil communautaire non officiel, sans affiliation avec FromSoftware ou Bandai Namco. Elden Ring et tous ses contenus sont la propriété de leurs ayants droit respectifs.
 
