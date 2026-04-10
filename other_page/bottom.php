@@ -1,6 +1,6 @@
 
 <footer>
 
-<p>&#xA9;</p><?php echo date('Y')?>
+&#xA9; <?php echo date('Y')?>
 
 </footer>
