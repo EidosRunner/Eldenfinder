@@ -7,7 +7,6 @@
     <title>eldenfinder</title>
 </head>
 <body>
-    <?php include'../other_page/top.php'; ?>
 
     <h1>eldenfinder</h1>
     <a>Lands Between</a>
@@ -17,7 +16,5 @@
 
 
 </body>
-    <?php include'../other_page/bottom.php';?>
-
 
 </html>

@@ -4,8 +4,9 @@
     <link rel="stylesheet" href="main.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>EldenFinder</title>
 </head>
+  <?php include'../other_page/top.php'; ?>
 
 
   <body>
@@ -15,4 +16,7 @@
     <p>Shadow of the erdtree</p>
     <!-- <img src="../image/NIGHTREIGN_launch-trailer.jpg" alt="nightreign"> -->
   </body>
+
+  <?php include'../other_page/bottom.php';?>
+
 </html>

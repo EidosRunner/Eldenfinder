@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — EldenFinder Admin</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <span class="rune">ᛟ</span>
+    <div class="logo-title">EldenFinder</div>
+    <div class="logo-sub">Admin Panel</div>
+  </div>
+  <nav>
+    <div class="nav-section">Général</div>
+    <a href="dashboard.html" class="nav-item active"><span class="icon">⚔</span> Dashboard</a>
+    <div class="nav-section">Contenu</div>
+    <a href="items.html" class="nav-item"><span class="icon">🗡</span> Items</a>
+    <a href="tags.html" class="nav-item"><span class="icon">🏷</span> Tags</a>
+    <a href="categories.html" class="nav-item"><span class="icon">📂</span> Catégories</a>
+    <div class="nav-section">Communication</div>
+    <a href="messages.html" class="nav-item"><span class="icon">📜</span> Messages<span class="nav-badge">3</span></a>
+    <div class="nav-section">Système</div>
+    <a href="operators.html" class="nav-item"><span class="icon">👁</span> Operators</a>
+  </nav>
+  <div class="sidebar-footer"><a href="#">⬡ Voir le site</a></div>
+</aside>
+
+<div class="main">
+  <div class="topbar">
+    <div class="topbar-title">EldenFinder / <span>Dashboard</span></div>
+    <div class="topbar-actions">
+      <div class="topbar-admin">
+        <div class="avatar">A</div>
+        Admin
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="page-header">
+      <div>
+        <h1>Dashboard</h1>
+        <p>Vue générale des Terres Intermédiaires</p>
+      </div>
+      <a href="item-edit.html" class="btn btn-primary">+ Nouvel item</a>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">Items total</div>
+        <div class="stat-value">347</div>
+        <div class="stat-sub">dont 12 en draft</div>
+        <div class="stat-icon">🗡</div>
+      </div>
+      <div class="stat-card green">
+        <div class="stat-label">Publiés</div>
+        <div class="stat-value">335</div>
+        <div class="stat-sub">dernière maj il y a 2j</div>
+        <div class="stat-icon">✦</div>
+      </div>
+      <div class="stat-card red">
+        <div class="stat-label">Messages</div>
+        <div class="stat-value">3</div>
+        <div class="stat-sub">non lus</div>
+        <div class="stat-icon">📜</div>
+      </div>
+      <div class="stat-card blue">
+        <div class="stat-label">Tags</div>
+        <div class="stat-value">66</div>
+        <div class="stat-sub">sur 4 catégories</div>
+        <div class="stat-icon">🏷</div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <div class="table-container">
+          <div class="table-toolbar">
+            <span style="font-family:'Cinzel',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--text3);">Derniers items ajoutés</span>
+            <a href="items.html" class="btn btn-ghost btn-sm" style="margin-left:auto">Voir tout</a>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Nom</th>
+                <th>Catégorie</th>
+                <th>Tag</th>
+                <th>Statut</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="item-name">Bloodhound's Fang</span></td>
+                <td>Items</td>
+                <td><span class="tag-chip">Curved Greatsword</span></td>
+                <td><span class="badge badge-published">Publié</span></td>
+              </tr>
+              <tr>
+                <td><span class="item-name">Moonveil</span></td>
+                <td>Items</td>
+                <td><span class="tag-chip">Katana</span></td>
+                <td><span class="badge badge-published">Publié</span></td>
+              </tr>
+              <tr>
+                <td><span class="item-name">Rivers of Blood</span></td>
+                <td>Items</td>
+                <td><span class="tag-chip">Katana</span></td>
+                <td><span class="badge badge-draft">Draft</span></td>
+              </tr>
+              <tr>
+                <td><span class="item-name">Radahn's Lion Armor</span></td>
+                <td>Items</td>
+                <td><span class="tag-chip">Chest Armor</span></td>
+                <td><span class="badge badge-published">Publié</span></td>
+              </tr>
+              <tr>
+                <td><span class="item-name">Hoarfrost Stomp</span></td>
+                <td>Items</td>
+                <td><span class="tag-chip">Ash of War</span></td>
+                <td><span class="badge badge-draft">Draft</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div class="table-container">
+          <div class="table-toolbar">
+            <span style="font-family:'Cinzel',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--text3);">Messages récents</span>
+            <a href="messages.html" class="btn btn-ghost btn-sm" style="margin-left:auto">Voir tout</a>
+          </div>
+          <table>
+            <thead><tr><th>Nom</th><th>Statut</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><span class="item-name">Chloé M.</span><br><span style="font-size:12px;color:var(--text3)">Arme manquante...</span></td>
+                <td><span class="badge badge-new">Nouveau</span></td>
+              </tr>
+              <tr>
+                <td><span class="item-name">Marc T.</span><br><span style="font-size:12px;color:var(--text3)">Erreur localisation</span></td>
+                <td><span class="badge badge-new">Nouveau</span></td>
+              </tr>
+              <tr>
+                <td><span class="item-name">Kael D.</span><br><span style="font-size:12px;color:var(--text3)">Suggestion DLC</span></td>
+                <td><span class="badge badge-new">Nouveau</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-container" style="padding:20px;">
+          <div style="font-family:'Cinzel',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--text3);margin-bottom:14px;">Répartition par tag</div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text2);margin-bottom:4px;"><span>Armes</span><span>142</span></div>
+              <div style="height:4px;background:var(--surface2);"><div style="height:4px;background:var(--gold-dim);width:41%"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text2);margin-bottom:4px;"><span>Armures</span><span>68</span></div>
+              <div style="height:4px;background:var(--surface2);"><div style="height:4px;background:var(--blue);width:20%"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text2);margin-bottom:4px;"><span>Sorts</span><span>87</span></div>
+              <div style="height:4px;background:var(--surface2);"><div style="height:4px;background:var(--green);width:25%"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text2);margin-bottom:4px;"><span>Consommables</span><span>50</span></div>
+              <div style="height:4px;background:var(--surface2);"><div style="height:4px;background:var(--red);width:14%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

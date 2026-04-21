@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages — EldenFinder Admin</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <span class="rune">ᛟ</span>
+    <div class="logo-title">EldenFinder</div>
+    <div class="logo-sub">Admin Panel</div>
+  </div>
+  <nav>
+    <div class="nav-section">Général</div>
+    <a href="dashboard.html" class="nav-item"><span class="icon">⚔</span> Dashboard</a>
+    <div class="nav-section">Contenu</div>
+    <a href="items.html" class="nav-item"><span class="icon">🗡</span> Items</a>
+    <a href="tags.html" class="nav-item"><span class="icon">🏷</span> Tags</a>
+    <a href="categories.html" class="nav-item"><span class="icon">📂</span> Catégories</a>
+    <div class="nav-section">Communication</div>
+    <a href="messages.html" class="nav-item active"><span class="icon">📜</span> Messages<span class="nav-badge">3</span></a>
+    <div class="nav-section">Système</div>
+    <a href="operators.html" class="nav-item"><span class="icon">👁</span> Operators</a>
+  </nav>
+  <div class="sidebar-footer"><a href="#">⬡ Voir le site</a></div>
+</aside>
+
+<div class="main">
+  <div class="topbar">
+    <div class="topbar-title">EldenFinder / <span>Messages</span></div>
+    <div class="topbar-actions">
+      <div class="topbar-admin"><div class="avatar">A</div> Admin</div>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="page-header">
+      <div>
+        <h1>Messages</h1>
+        <p>3 messages non lus sur 12 au total</p>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <div class="table-toolbar">
+        <input type="text" class="search-input" placeholder="Rechercher un message...">
+        <select class="filter-select">
+          <option>Tous les statuts</option>
+          <option>Nouveau</option>
+          <option>Lu</option>
+        </select>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Nom</th><th>Email</th><th>Sujet</th><th>Assigné à</th><th>Statut</th><th>Actions</th></tr>
+        </thead>
+        <tbody>
+          <tr style="font-weight:500;">
+            <td><span class="item-name">Chloé Marant</span></td>
+            <td style="color:var(--gold-dim);font-size:13px;">chloem@mail.com</td>
+            <td>Item manquant dans la liste</td>
+            <td style="color:var(--text3)">—</td>
+            <td><span class="badge badge-new">Nouveau</span></td>
+            <td><a href="message-detail.html" class="btn btn-ghost btn-sm">Voir</a></td>
+          </tr>
+          <tr style="font-weight:500;">
+            <td><span class="item-name">Marc Thibaut</span></td>
+            <td style="color:var(--gold-dim);font-size:13px;">voidless@mail.com</td>
+            <td>Erreur de localisation — Moonveil</td>
+            <td style="color:var(--text3)">—</td>
+            <td><span class="badge badge-new">Nouveau</span></td>
+            <td><a href="message-detail.html" class="btn btn-ghost btn-sm">Voir</a></td>
+          </tr>
+          <tr style="font-weight:500;">
+            <td><span class="item-name">Kael Drevyn</span></td>
+            <td style="color:var(--gold-dim);font-size:13px;">kael@mail.com</td>
+            <td>Suggestion — items DLC manquants</td>
+            <td style="color:var(--text3)">—</td>
+            <td><span class="badge badge-new">Nouveau</span></td>
+            <td><a href="message-detail.html" class="btn btn-ghost btn-sm">Voir</a></td>
+          </tr>
+          <tr>
+            <td><span class="item-name">Anonymous</span></td>
+            <td style="color:var(--gold-dim);font-size:13px;">anon@mail.com</td>
+            <td>Bug sur la page item</td>
+            <td>Admin</td>
+            <td><span class="badge badge-read">Lu</span></td>
+            <td><a href="message-detail.html" class="btn btn-ghost btn-sm">Voir</a></td>
+          </tr>
+          <tr>
+            <td><span class="item-name">Sophie L.</span></td>
+            <td style="color:var(--gold-dim);font-size:13px;">sophie@mail.com</td>
+            <td>Super site, merci !</td>
+            <td>Admin</td>
+            <td><span class="badge badge-read">Lu</span></td>
+            <td><a href="message-detail.html" class="btn btn-ghost btn-sm">Voir</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="table-footer">
+        <span>5 messages affichés sur 12</span>
+        <div class="pagination">
+          <a href="#" class="page-btn active">1</a>
+          <a href="#" class="page-btn">2</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

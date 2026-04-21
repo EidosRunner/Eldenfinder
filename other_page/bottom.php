@@ -1,7 +1,7 @@
 
 <footer>
 <address>
-    <span>eldenFinder</span>
+    <span>EldenFinder</span>
     <span>EldenFinder@gmail.com</span>
 </address>
 

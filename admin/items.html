@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Items — EldenFinder Admin</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <span class="rune">ᛟ</span>
+    <div class="logo-title">EldenFinder</div>
+    <div class="logo-sub">Admin Panel</div>
+  </div>
+  <nav>
+    <div class="nav-section">Général</div>
+    <a href="dashboard.html" class="nav-item"><span class="icon">⚔</span> Dashboard</a>
+    <div class="nav-section">Contenu</div>
+    <a href="items.html" class="nav-item active"><span class="icon">🗡</span> Items</a>
+    <a href="tags.html" class="nav-item"><span class="icon">🏷</span> Tags</a>
+    <a href="categories.html" class="nav-item"><span class="icon">📂</span> Catégories</a>
+    <div class="nav-section">Communication</div>
+    <a href="messages.html" class="nav-item"><span class="icon">📜</span> Messages<span class="nav-badge">3</span></a>
+    <div class="nav-section">Système</div>
+    <a href="operators.html" class="nav-item"><span class="icon">👁</span> Operators</a>
+  </nav>
+  <div class="sidebar-footer"><a href="#">⬡ Voir le site</a></div>
+</aside>
+
+<div class="main">
+  <div class="topbar">
+    <div class="topbar-title">EldenFinder / <span>Items</span></div>
+    <div class="topbar-actions">
+      <div class="topbar-admin"><div class="avatar">A</div> Admin</div>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="page-header">
+      <div>
+        <h1>Items</h1>
+        <p>347 items — 335 publiés, 12 drafts</p>
+      </div>
+      <a href="item-edit.html" class="btn btn-primary">+ Nouvel item</a>
+    </div>
+
+    <div class="table-container">
+      <div class="table-toolbar">
+        <input type="text" class="search-input" placeholder="Rechercher un item...">
+        <select class="filter-select">
+          <option>Toutes catégories</option>
+          <option>Items</option>
+          <option>Characters</option>
+          <option>Enemies</option>
+          <option>Lore</option>
+        </select>
+        <select class="filter-select">
+          <option>Tous les tags</option>
+          <option>Katana</option>
+          <option>Greatsword</option>
+          <option>Ash of War</option>
+          <option>Helm</option>
+          <option>Chest Armor</option>
+        </select>
+        <select class="filter-select">
+          <option>Tous statuts</option>
+          <option>Publié</option>
+          <option>Draft</option>
+        </select>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Catégorie</th>
+            <th>Tag</th>
+            <th>Poids</th>
+            <th>Statut</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="color:var(--text3)">#01</td>
+            <td><span class="item-name">Bloodhound's Fang</span></td>
+            <td>Items</td>
+            <td><span class="tag-chip">Curved Greatsword</span></td>
+            <td>13.0</td>
+            <td><span class="badge badge-published">Publié</span></td>
+            <td><div class="actions-cell">
+              <a href="item-edit.html" class="btn btn-ghost btn-sm">Éditer</a>
+              <button class="btn btn-danger btn-sm">Suppr.</button>
+            </div></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3)">#02</td>
+            <td><span class="item-name">Moonveil</span></td>
+            <td>Items</td>
+            <td><span class="tag-chip">Katana</span></td>
+            <td>6.5</td>
+            <td><span class="badge badge-published">Publié</span></td>
+            <td><div class="actions-cell">
+              <a href="item-edit.html" class="btn btn-ghost btn-sm">Éditer</a>
+              <button class="btn btn-danger btn-sm">Suppr.</button>
+            </div></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3)">#03</td>
+            <td><span class="item-name">Rivers of Blood</span></td>
+            <td>Items</td>
+            <td><span class="tag-chip">Katana</span></td>
+            <td>6.5</td>
+            <td><span class="badge badge-draft">Draft</span></td>
+            <td><div class="actions-cell">
+              <a href="item-edit.html" class="btn btn-ghost btn-sm">Éditer</a>
+              <button class="btn btn-danger btn-sm">Suppr.</button>
+            </div></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3)">#04</td>
+            <td><span class="item-name">Radahn's Lion Armor</span></td>
+            <td>Items</td>
+            <td><span class="tag-chip">Chest Armor</span></td>
+            <td>22.0</td>
+            <td><span class="badge badge-published">Publié</span></td>
+            <td><div class="actions-cell">
+              <a href="item-edit.html" class="btn btn-ghost btn-sm">Éditer</a>
+              <button class="btn btn-danger btn-sm">Suppr.</button>
+            </div></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3)">#05</td>
+            <td><span class="item-name">Ash of War: Hoarfrost Stomp</span></td>
+            <td>Items</td>
+            <td><span class="tag-chip">Ash of War</span></td>
+            <td>—</td>
+            <td><span class="badge badge-draft">Draft</span></td>
+            <td><div class="actions-cell">
+              <a href="item-edit.html" class="btn btn-ghost btn-sm">Éditer</a>
+              <button class="btn btn-danger btn-sm">Suppr.</button>
+            </div></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3)">#06</td>
+            <td><span class="item-name">Erdtree's Favor</span></td>
+            <td>Items</td>
+            <td><span class="tag-chip">Talisman</span></td>
+            <td>0.8</td>
+            <td><span class="badge badge-published">Publié</span></td>
+            <td><div class="actions-cell">
+              <a href="item-edit.html" class="btn btn-ghost btn-sm">Éditer</a>
+              <button class="btn btn-danger btn-sm">Suppr.</button>
+            </div></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3)">#07</td>
+            <td><span class="item-name">Malenia, Blade of Miquella</span></td>
+            <td>Characters</td>
+            <td><span class="tag-chip">Boss</span></td>
+            <td>—</td>
+            <td><span class="badge badge-published">Publié</span></td>
+            <td><div class="actions-cell">
+              <a href="item-edit.html" class="btn btn-ghost btn-sm">Éditer</a>
+              <button class="btn btn-danger btn-sm">Suppr.</button>
+            </div></td>
+          </tr>
+          <tr>
+            <td style="color:var(--text3)">#08</td>
+            <td><span class="item-name">Larval Tear</span></td>
+            <td>Items</td>
+            <td><span class="tag-chip">Key Item</span></td>
+            <td>0.1</td>
+            <td><span class="badge badge-published">Publié</span></td>
+            <td><div class="actions-cell">
+              <a href="item-edit.html" class="btn btn-ghost btn-sm">Éditer</a>
+              <button class="btn btn-danger btn-sm">Suppr.</button>
+            </div></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="table-footer">
+        <span>Affichage 1–8 sur 347</span>
+        <div class="pagination">
+          <a href="#" class="page-btn active">1</a>
+          <a href="#" class="page-btn">2</a>
+          <a href="#" class="page-btn">3</a>
+          <a href="#" class="page-btn">…</a>
+          <a href="#" class="page-btn">44</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

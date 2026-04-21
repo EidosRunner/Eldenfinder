@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
-$db   = 'session13';
-$user = 'session13';
-$pass = '73u]o6U7DRybN/yV';
+$db   = 'eldenfinder';
+$user = 'eldenfinder';
+$pass = 'bjelqs*!uL-A/rpE';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
