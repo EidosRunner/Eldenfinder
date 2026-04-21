@@ -41,6 +41,7 @@
     <div class="page-header">
       <div>
         <h1>Items</h1>
+        <p>0 items</p>
       </div>
       <a href="item-edit.html" class="btn btn-primary">+ Nouvel item</a>
     </div>
@@ -49,16 +50,53 @@
       <div class="table-toolbar">
         <input type="text" class="search-input" placeholder="Rechercher un item...">
         <select class="filter-select">
-        <div class="pagination">
-          <a href="#" class="page-btn active">1</a>
-          <a href="#" class="page-btn">2</a>
-          <a href="#" class="page-btn">3</a>
-          <a href="#" class="page-btn">…</a>
-          <a href="#" class="page-btn">44</a>
-        </div>
+          <option>Toutes catégories</option>
+          <option>Items</option>
+          <option>Characters</option>
+          <option>Enemies</option>
+          <option>Lore</option>
+        </select>
+        <select class="filter-select">
+          <option>Tous les tags</option>
+          <option>Katana</option>
+          <option>Greatsword</option>
+          <option>Ash of War</option>
+          <option>Helm</option>
+          <option>Chest Armor</option>
+        </select>
+        <select class="filter-select">
+          <option>Tous statuts</option>
+          <option>Publié</option>
+          <option>Draft</option>
+        </select>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Catégorie</th>
+            <th>Tag</th>
+            <th>Poids</th>
+            <th>Statut</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="7"><div class="empty-state"><div class="empty-icon">🗡</div><p>Aucun item pour l'instant</p></div></td></tr>
+        </tbody>
+      </table>
+
+      <div class="table-footer">
+        <span>0 items</span>
       </div>
     </div>
   </div>
+</div>
+
+</body>
+</html>
 </div>
 
 </body>

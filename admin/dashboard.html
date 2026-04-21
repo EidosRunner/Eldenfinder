@@ -47,6 +47,80 @@
         <p>Vue générale des Terres Intermédiaires</p>
       </div>
       <a href="item-edit.html" class="btn btn-primary">+ Nouvel item</a>
-    </div>  
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">Items total</div>
+        <div class="stat-value">0</div>
+        <div class="stat-sub">aucun item</div>
+        <div class="stat-icon">🗡</div>
+      </div>
+      <div class="stat-card green">
+        <div class="stat-label">Publiés</div>
+        <div class="stat-value">0</div>
+        <div class="stat-sub">—</div>
+        <div class="stat-icon">✦</div>
+      </div>
+      <div class="stat-card red">
+        <div class="stat-label">Messages</div>
+        <div class="stat-value">0</div>
+        <div class="stat-sub">aucun message</div>
+        <div class="stat-icon">📜</div>
+      </div>
+      <div class="stat-card blue">
+        <div class="stat-label">Tags</div>
+        <div class="stat-value">0</div>
+        <div class="stat-sub">aucun tag</div>
+        <div class="stat-icon">🏷</div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <div class="table-container">
+          <div class="table-toolbar">
+            <span style="font-family:'Cinzel',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--text3);">Derniers items ajoutés</span>
+            <a href="items.html" class="btn btn-ghost btn-sm" style="margin-left:auto">Voir tout</a>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Nom</th>
+                <th>Catégorie</th>
+                <th>Tag</th>
+                <th>Statut</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td colspan="4"><div class="empty-state"><div class="empty-icon">🗡</div><p>Aucun item pour l'instant</p></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div class="table-container">
+          <div class="table-toolbar">
+            <span style="font-family:'Cinzel',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--text3);">Messages récents</span>
+            <a href="messages.html" class="btn btn-ghost btn-sm" style="margin-left:auto">Voir tout</a>
+          </div>
+          <table>
+            <thead><tr><th>Nom</th><th>Statut</th></tr></thead>
+            <tbody>
+              <tr><td colspan="2"><div class="empty-state"><div class="empty-icon">📜</div><p>Aucun message</p></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-container" style="padding:20px;">
+          <div style="font-family:'Cinzel',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--text3);margin-bottom:14px;">Répartition par tag</div>
+          <div class="empty-state"><div class="empty-icon">🏷</div><p>Aucune donnée disponible</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
