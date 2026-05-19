@@ -5,7 +5,7 @@
 <?php 
 
 if(empty($_GET["categorie"])){
-    $category = 'home_page\home_page.php';
+    $category = 'home_page\home_page';
     var_dump($_GET);
 }
 else{
@@ -17,4 +17,4 @@ include $category . '.php';
 ?>
 </main>
 
-<?php include 'other_page/bottom.html';?>
+<?php include 'other_page/bottom.php';?>
