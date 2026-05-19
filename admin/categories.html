@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catégories — EldenFinder Admin</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <span class="rune">ᛟ</span>
+    <div class="logo-title">EldenFinder</div>
+    <div class="logo-sub">Admin Panel</div>
+  </div>
+  <nav>
+    <div class="nav-section">Général</div>
+    <a href="dashboard.html" class="nav-item"><span class="icon">⚔</span> Dashboard</a>
+    <div class="nav-section">Contenu</div>
+    <a href="items.html" class="nav-item"><span class="icon">🗡</span> Items</a>
+    <a href="tags.html" class="nav-item"><span class="icon">🏷</span> Tags</a>
+    <a href="categories.html" class="nav-item active"><span class="icon">📂</span> Catégories</a>
+    <div class="nav-section">Communication</div>
+    <a href="messages.html" class="nav-item"><span class="icon">📜</span> Messages<span class="nav-badge">3</span></a>
+    <div class="nav-section">Système</div>
+    <a href="operators.html" class="nav-item"><span class="icon">👁</span> Operators</a>
+  </nav>
+  <div class="sidebar-footer"><a href="#">⬡ Voir le site</a></div>
+</aside>
+
+<div class="main">
+  <div class="topbar">
+    <div class="topbar-title">EldenFinder / <span>Catégories</span></div>
+    <div class="topbar-actions">
+      <div class="topbar-admin"><div class="avatar">A</div> Admin</div>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="page-header">
+      <div>
+        <h1>Catégories</h1>
+        <p>4 catégories principales dans les Terres Intermédiaires</p>
+      </div>
+      <button class="btn btn-primary">+ Nouvelle catégorie</button>
+    </div>
+
+    <div class="two-col">
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr><th>ID</th><th>Label</th><th>Slug</th><th>Tags liés</th><th>Items liés</th><th>Actions</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="color:var(--text3)">#2</td>
+              <td><span class="item-name">Characters</span></td>
+              <td><code style="font-size:12px;color:var(--text3)">Characters</code></td>
+              <td>3</td>
+              <td>42</td>
+              <td><div class="actions-cell">
+                <button class="btn btn-ghost btn-sm">Éditer</button>
+                <button class="btn btn-danger btn-sm">Suppr.</button>
+              </div></td>
+            </tr>
+            <tr>
+              <td style="color:var(--text3)">#3</td>
+              <td><span class="item-name">Enemies</span></td>
+              <td><code style="font-size:12px;color:var(--text3)">enemies</code></td>
+              <td>3</td>
+              <td>87</td>
+              <td><div class="actions-cell">
+                <button class="btn btn-ghost btn-sm">Éditer</button>
+                <button class="btn btn-danger btn-sm">Suppr.</button>
+              </div></td>
+            </tr>
+            <tr>
+              <td style="color:var(--text3)">#4</td>
+              <td><span class="item-name">Items</span></td>
+              <td><code style="font-size:12px;color:var(--text3)">items</code></td>
+              <td>57</td>
+              <td>218</td>
+              <td><div class="actions-cell">
+                <button class="btn btn-ghost btn-sm">Éditer</button>
+                <button class="btn btn-danger btn-sm">Suppr.</button>
+              </div></td>
+            </tr>
+            <tr>
+              <td style="color:var(--text3)">#5</td>
+              <td><span class="item-name">Lore</span></td>
+              <td><code style="font-size:12px;color:var(--text3)">lore</code></td>
+              <td>3</td>
+              <td>0</td>
+              <td><div class="actions-cell">
+                <button class="btn btn-ghost btn-sm">Éditer</button>
+                <button class="btn btn-danger btn-sm">Suppr.</button>
+              </div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Formulaire ajout rapide -->
+      <div class="form-section" style="height:fit-content;">
+        <div class="form-section-title">Ajouter une catégorie</div>
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div class="form-group">
+            <label>Label <span class="required">*</span></label>
+            <input type="text" class="form-input" placeholder="ex: Locations">
+          </div>
+          <div class="form-group">
+            <label>Slug <span class="required">*</span></label>
+            <input type="text" class="form-input" placeholder="ex: locations">
+            <span class="form-hint">Minuscules, tirets uniquement</span>
+          </div>
+          <button class="btn btn-primary" style="justify-content:center;">Créer la catégorie</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
