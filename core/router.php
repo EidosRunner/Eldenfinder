@@ -69,10 +69,11 @@ function run(array $route, string $base_path): string
     // Le nom de l'entité détermine le fichier controller à charger.
     // Exemple : item → controllers/item.php
     $controller_filepath = $base_path . '/controllers/' . $route['entity'] . '.php';
+    
     // Le nom de l'entité et le nom de l'action déterminent la fonction à appeler.
     // Exemple : item + show → item_show()
     $function_name = $route['entity'] . '_' . $route['action'];
-
+       
     // Si le fichier controller n'existe pas, la route ne peut pas être traitée.
     if (!is_file($controller_filepath)) {
         throw new RuntimeException('Controller not found: ' . $route['entity']);
@@ -80,17 +81,16 @@ function run(array $route, string $base_path): string
 
     // Le fichier est chargé seulement après vérification de son existence.
     require_once $controller_filepath;
-
+    
     // Si la fonction attendue n'existe pas, le controller ne peut pas traiter cette action.
     if (!function_exists($function_name)) {
         throw new RuntimeException('Controller function not found: ' . $function_name);
     }
-
+    
     // Si un identifiant existe dans la route, il est transmis au controller.
     if ($route['id'] !== null) {
         return $function_name($route['id']);
     }
-
 
     // Sinon, le controller est appelé sans argument.
     return $function_name();

@@ -6,9 +6,6 @@
     <title>EldenFinder</title>
 </head>
 <body>
-    
-<?php include'../other_page/top.php'; ?>
-
     <h1>item name</h1>
     <img src="../image/radahns-great-rune-key-item-elden-ring-wiki-guide.png" alt="item image">
     <p>short description</p>
@@ -25,8 +22,4 @@
     </article>
     
 </body>
-
-
-<?php include'../other_page/bottom.php';?>
-
 </html>

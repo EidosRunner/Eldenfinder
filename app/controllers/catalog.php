@@ -1,8 +1,8 @@
 <?php
 
-function catalog_detail()
+function catalog_index()
 {
 
+    return render('app/views/catalog.php');
 
-    return render('app/views/catalog.php', $data);
 }
