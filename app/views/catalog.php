@@ -1,4 +1,3 @@
-
     <header>
       <h1>Book catalog</h1>
       <p>
