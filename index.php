@@ -1,20 +1,19 @@
-<?php include 'PDO.php'; ?>
-<?php include 'other_page\top.php';?>
+<?php
 
-<main class="container">
-<?php 
+require 'core/http.php';
+require 'core/router.php';
+require 'core/html.php';
 
-if(empty($_GET["categorie"])){
-    $category = 'home_page\home_page';
-    var_dump($_GET);
-}
-else{
-    $category = $_GET["categorie"];
-}
+$base = __DIR__.'/app';
 
-include $category . '.php';
+$segments = http_in($_SERVER['REQUEST_URI']);
+$route = route($segments);
 
-?>
-</main>
+$main = run($route, $base);
+$body = render('app/views/_layout.php', ['page_content' => $main]);
 
-<?php include 'other_page/bottom.php';?>
+http_out(200, $body);
+
+// var_dump($segments);
+// var_dump($route);
+// var_dump($body);
