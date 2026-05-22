@@ -6,17 +6,17 @@
     <title>EldenFinder</title>
 </head>
 <body>
-    <h1>item name</h1>
-    <img src="" alt="item image">
-    <p>short description</p>
-    <p>full description</p>
     <article>
-    <ol>
-        <li>dmg</li>
-        <li>dmg</li>
-        <li>dmg</li>
-        <li>dmg</li>
-        <li>dmg</li>
+        <h1>item name</h1>
+        <img src="" alt="item image">
+        <p>short description</p>
+        <p>full description</p>
+        <ol>
+            <li>dmg</li>
+            <li>dmg</li>
+            <li>dmg</li>
+            <li>dmg</li>
+            <li>dmg</li>
     
         </ol> 
     </article>

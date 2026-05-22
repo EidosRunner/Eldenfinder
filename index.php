@@ -10,7 +10,7 @@ $base = __DIR__.'/app';
 $segments = http_in($_SERVER['REQUEST_URI']);
 $route = route($segments);
 
-$main = run($route, $base);
+$main = run($route, $base, $pdo);
 $body = render('app/views/_layout.php', ['page_content' => $main]);
 
 http_out(200, $body);

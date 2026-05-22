@@ -1,9 +1,9 @@
 <?php
-
-function catalog_index()
+require __DIR__.'/../models/catalog.php';
+function catalog_index($pdo)
 {
-
-    return render('app/views/catalog.php');
+    $data = [];
+    $data['items'] = get_all_items($pdo);
+    return render('app/views/catalog.php', $data);
     
-
 }
