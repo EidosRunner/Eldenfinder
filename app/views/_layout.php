@@ -4,12 +4,11 @@
     <a href="">DLC</a>
     <a href="">Contact us</a>
 </header>
+<main>
 
 
 
-
-
-
+</main>
 <footer>
 <address>
     <span>EldenFinder</span>
