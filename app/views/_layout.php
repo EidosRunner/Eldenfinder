@@ -1,12 +1,11 @@
 <header>
-    <a href="http://localhost/eldenfinder/Eldenfinder/main%20page/main.html">EldenFinder</a>
-    <a href="">Lands between</a>
-    <a href="">DLC</a>
-    <a href="">Contact us</a>
-</header>
+    <a href="/">EldenFinder</a>
+    <a href="catalog">Lands between</a>
+    <a href="catalogdlc">SoTe</a>
+ </header>
 <main>
 
-
+<?php echo $page_content;?>
 
 </main>
 <footer>

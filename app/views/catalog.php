@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>item name</h1>
-    <img src="../image/radahns-great-rune-key-item-elden-ring-wiki-guide.png" alt="item image">
+    <img src="" alt="item image">
     <p>short description</p>
     <p>full description</p>
     <article>
