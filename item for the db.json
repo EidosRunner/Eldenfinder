@@ -1,0 +1,124 @@
+item for the db 
+
+[
+  {
+    "slug": "dark-moon-greatsword",
+    "label": "Dark Moon Greatsword",
+    "short_description": "Légendaire épée à deux mains infusée de la lune sombre.",
+    "content": "Une épée colossale offerte par Ranni la Sorcière. Elle inflige des dégâts magiques et de glace supplémentaires. Son skill invoque le froid lunaire sur la lame.",
+    "main_image": "dark_moon_greatsword.webp",
+    "status": "published",
+    "skill": "Moonlight Greatsword",
+    "skill_fp_cost": 32,
+    "weight": 10,
+    "upgrade_material": "Somber Smithing Stone"
+  },
+  {
+    "slug": "rivers-of-blood",
+    "label": "Rivers of Blood",
+    "short_description": "Katana maudit qui répand le saignement en volutes de sang.",
+    "content": "Katana à la lame tachée de sang obtenu auprès de Bloody Finger Okina. Inflige des dégâts de saignement redoutables. Son skill projette des lacérations de sang à distance.",
+    "main_image": "rivers_of_blood.webp",
+    "status": "published",
+    "skill": "Corpse Piler",
+    "skill_fp_cost": 17,
+    "weight": 7,
+    "upgrade_material": "Somber Smithing Stone"
+  },
+  {
+    "slug": "blasphemous-blade",
+    "label": "Blasphemous Blade",
+    "short_description": "Épée hérétique forgée dans la chair des dieux.",
+    "content": "Grande épée obtenue en transposant l'âme de Rykard, Seigneur du Blasphème. Elle soigne le porteur à chaque ennemi tué et projette des flammes lors de son skill.",
+    "main_image": "blasphemous_blade.webp",
+    "status": "published",
+    "skill": "Taker's Flames",
+    "skill_fp_cost": 30,
+    "weight": 13,
+    "upgrade_material": "Somber Smithing Stone"
+  },
+  {
+    "slug": "moonveil",
+    "label": "Moonveil",
+    "short_description": "Katana aux reflets de lune, redoutable pour les mages guerriers.",
+    "content": "Katana magique obtenu dans les Mines de Gael Tunnel. Parfait pour les builds Intelligence. Son skill projette un flash de lame lumineux capable de briser la garde.",
+    "main_image": "moonveil.webp",
+    "status": "published",
+    "skill": "Transient Moonlight",
+    "skill_fp_cost": 15,
+    "weight": 6,
+    "upgrade_material": "Somber Smithing Stone"
+  },
+  {
+    "slug": "starscourge-greatsword",
+    "label": "Starscourge Greatsword",
+    "short_description": "Épée gravitationnelle du Seigneur des Étoiles Radahn.",
+    "content": "Arme légendaire obtenue en transposant l'âme de Starscourge Radahn. Peut être maniée en double en combinant deux épées. Son skill génère un vortex gravitationnel.",
+    "main_image": "starscourge_greatsword.webp",
+    "status": "published",
+    "skill": "Starcaller Cry",
+    "skill_fp_cost": 26,
+    "weight": 18,
+    "upgrade_material": "Somber Smithing Stone"
+  },
+  {
+    "slug": "grafted-blade-greatsword",
+    "label": "Grafted Blade Greatsword",
+    "short_description": "Colosse de métal forgé d'innombrables épées entremêlées.",
+    "content": "Épée géante obtenue en vainquant Leonine Misbegotten au Château Morne. L'une des armes les plus lourdes du jeu. Son skill renforce temporairement toutes les statistiques du joueur.",
+    "main_image": "grafted_blade_greatsword.webp",
+    "status": "published",
+    "skill": "Oath of Vengeance",
+    "skill_fp_cost": 40,
+    "weight": 21,
+    "upgrade_material": "Smithing Stone"
+  },
+  {
+    "slug": "sword-of-night-and-flame",
+    "label": "Sword of Night and Flame",
+    "short_description": "Épée légendaire maîtrisant à la fois la magie et le feu.",
+    "content": "Épée droite trouvée dans le Château Caria. Elle possède deux skills distincts : un rayon de lune magique et une rafale de flammes. Idéale pour les builds hybrides Intelligence/Foi.",
+    "main_image": "sword_of_night_and_flame.webp",
+    "status": "published",
+    "skill": "Night-and-Flame Stance",
+    "skill_fp_cost": 32,
+    "weight": 4,
+    "upgrade_material": "Somber Smithing Stone"
+  },
+  {
+    "slug": "eleonoras-poleblade",
+    "label": "Eleonora's Poleblade",
+    "short_description": "Hallebarde jumelle portée par la Bloody Finger Eleonora.",
+    "content": "Arme double obtenue en vainquant Eleonora. Inflige des dégâts de feu et de saignement simultanément. Son skill enchaîne une danse de lames tourbillonnantes dévastatrice.",
+    "main_image": "eleonoras_poleblade.webp",
+    "status": "published",
+    "skill": "Bloodblade Dance",
+    "skill_fp_cost": 23,
+    "weight": 8,
+    "upgrade_material": "Somber Smithing Stone"
+  },
+  {
+    "slug": "ruins-greatsword",
+    "label": "Ruins Greatsword",
+    "short_description": "Fragment de ruine gravitationnel d'une puissance écrasante.",
+    "content": "Épée colossale obtenue en vainquant les Valiant Gargoyles. L'une des meilleures armes pour les builds Force. Son skill génère une onde de choc gravitationnelle au sol.",
+    "main_image": "ruins_greatsword.webp",
+    "status": "published",
+    "skill": "Wave of Destruction",
+    "skill_fp_cost": 30,
+    "weight": 23,
+    "upgrade_material": "Somber Smithing Stone"
+  },
+  {
+    "slug": "hand-of-malenia",
+    "label": "Hand of Malenia",
+    "short_description": "Katana prothétique de Malenia, Lame de Miquella.",
+    "content": "Arme légendaire obtenue en transposant l'âme de Malenia. Katana capable de soigner le porteur à chaque coup porté, même bloqué. Son skill reproduit le légendaire Scarlet Aeonia.",
+    "main_image": "hand_of_malenia.webp",
+    "status": "published",
+    "skill": "Waterfowl Dance",
+    "skill_fp_cost": 26,
+    "weight": 7,
+    "upgrade_material": "Somber Smithing Stone"
+  }
+]

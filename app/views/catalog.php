@@ -6,20 +6,26 @@
     <title>EldenFinder</title>
 </head>
 <body>
-    <article>
-        <h1>item name</h1>
+    <?php 
+    foreach($items as $items){
+    ?>
+        <article>
+        <h1> <?= $items['slug'];?> </h1>
         <img src="" alt="item image">
-        <p>short description</p>
-        <p>full description</p>
+        <p><?= $items['label'];?></p>
+        <p><?= $items[''];?></p>
         <ol>
-            <li>dmg</li>
-            <li>dmg</li>
-            <li>dmg</li>
-            <li>dmg</li>
-            <li>dmg</li>
-    
+            <li><?php  ?></li>
+            <li><?php  ?></li>
+            <li><?php  ?></li>
+            <li><?php  ?></li>
+            <li><?php  ?></li>
         </ol> 
     </article>
+    <?php
+    }    
+    ?>
+
     
 </body>
 </html>
