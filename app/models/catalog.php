@@ -1,5 +1,4 @@
 <?php 
-
 function get_all_items($pdo)
 {
     $sql = 'SELECT * FROM item'; 

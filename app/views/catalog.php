@@ -7,24 +7,26 @@
 </head>
 <body>
     <?php 
-    foreach($items as $items){
+    foreach($items as $items){   
     ?>
         <article>
         <h1> <?= $items['slug'];?> </h1>
-        <img src="" alt="item image">
+        <img src="<?= $items['main_image']; ?>" alt="item image">
         <p><?= $items['label'];?></p>
-        <p><?= $items[''];?></p>
+        <p> description: <?= $items['short_description']; ?></p>
         <ol>
-            <li><?php  ?></li>
-            <li><?php  ?></li>
-            <li><?php  ?></li>
-            <li><?php  ?></li>
-            <li><?php  ?></li>
-        </ol> 
+            <li>weapon category: <?= $items['category_id']; ?></li>
+            <li> weapon skill: <?= $items['skill']; ?></li>
+            <li> weapon skill cost: <?= $items['skill_fp_cost']; ?></li>
+            <li> weapon weight: <?= $items['weight']; ?></li>
+            
+            <li></li>
+        </ol>
+
+        <p>upgrade material <?= $items['upgrade_material']; ?></p>
+
+  <?php } ?>
     </article>
-    <?php
-    }    
-    ?>
 
     
 </body>
