@@ -12,6 +12,8 @@
     <a href="/">EldenFinder</a>
     <a href="/catalog">Lands between</a>
     <a href="/catalogdlc">SoTe</a>
+    <a href="/login">Connexion</a>
+    <a href="/user/signup">Inscription</a>   
 </header>
 
 <main>
