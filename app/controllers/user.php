@@ -41,7 +41,6 @@ function user_signup($pdo)
 
 function user_logout($pdo)
 {
-    session_start();
     session_destroy();
     redirect('/');
 }
