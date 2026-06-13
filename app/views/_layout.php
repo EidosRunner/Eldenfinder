@@ -1,10 +1,3 @@
-<?php if (isset($_SESSION['user_id'])): ?>
-    <a href="/user/logout">Déconnexion</a>
-<?php else: ?>
-    <a href="/user/login">Connexion</a>
-    <a href="/user/signup">Inscription</a>
-<?php endif; ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -19,8 +12,12 @@
     <a href="/">EldenFinder</a>
     <a href="/catalog">Lands between</a>
     <a href="/catalogdlc">SoTe</a>
-    <a href="/user/login">Connexion</a>
-    <a href="/user/signup">Inscription</a>   
+    <?php if (isset($_SESSION['user_id'])): ?>
+        <a href="/user/logout">Déconnexion</a>
+    <?php else: ?>
+        <a href="/user/login">Connexion</a>
+        <a href="/user/signup">Inscription</a>
+    <?php endif; ?>
 </header>
 
 <main>

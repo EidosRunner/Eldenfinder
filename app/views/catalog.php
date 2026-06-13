@@ -3,9 +3,9 @@
         foreach($items as $items){   
         ?>
             <article>
-            <a href="/item/show/<?= $items['id'] ?>">
+            <a href="/item/show/<?= $items['id'] ?>"> </a>
             <h1> <?= $items['slug'];?> </h1>
-            <img src="<?= $items['main_image']; ?>" alt="item image">
+            <img src="<?= $items['main_image']; ?>" alt="">
             <p><?= $items['label'];?></p>
             <ol>
                 
@@ -15,4 +15,5 @@
 
         </article>  
         <?php } ?>
+
 </div>
