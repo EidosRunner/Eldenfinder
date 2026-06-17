@@ -9,14 +9,21 @@
 <body>
 
 <header>
-    <a href="/">EldenFinder</a>
-    <a href="/catalog">Lands between</a>
-    <a href="/catalogdlc">SoTe</a>
+<div class="header-left">
+        <a href="/">EldenFinder</a>
+        <a href="/catalog">Lands between</a>
+        <a href="/catalogdlc">SoTe</a>
+    </div>
     <?php if (isset($_SESSION['user_id'])): ?>
+        <div class="header-right">
+        <a href="/favorite">favori</a>
         <a href="/user/logout">Déconnexion</a>
+    </div>
     <?php else: ?>
+        <div class="header-right">
         <a href="/user/login">Connexion</a>
         <a href="/user/signup">Inscription</a>
+        </div>
     <?php endif; ?>
 </header>
 
