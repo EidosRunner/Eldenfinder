@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catégories — EldenFinder Admin</title>
-  <link rel="stylesheet" href="admin.css">
-</head>
-<body>
-
 <aside class="sidebar">
   <div class="sidebar-logo">
     <span class="rune">ᛟ</span>
@@ -16,15 +6,15 @@
   </div>
   <nav>
     <div class="nav-section">Général</div>
-    <a href="dashboard.html" class="nav-item"><span class="icon">⚔</span> Dashboard</a>
+    <a href="/admin" class="nav-item"><span class="icon">⚔</span> Dashboard</a>
     <div class="nav-section">Contenu</div>
-    <a href="items.html" class="nav-item"><span class="icon">🗡</span> Items</a>
-    <a href="tags.html" class="nav-item"><span class="icon">🏷</span> Tags</a>
-    <a href="categories.html" class="nav-item active"><span class="icon">📂</span> Catégories</a>
+    <a href="/admin/item" class="nav-item"><span class="icon">🗡</span> Items</a>
+    <a href="/admin/tag" class="nav-item"><span class="icon">🏷</span> Tags</a>
+    <a href="/admin/category" class="nav-item active"><span class="icon">📂</span> Catégories</a>
     <div class="nav-section">Communication</div>
-    <a href="messages.html" class="nav-item"><span class="icon">📜</span> Messages<span class="nav-badge">3</span></a>
+    <a href="/admin/message" class="nav-item"><span class="icon">📜</span> Messages<span class="nav-badge">3</span></a>
     <div class="nav-section">Système</div>
-    <a href="operators.html" class="nav-item"><span class="icon">👁</span> Operators</a>
+    <a href="/admin/operator" class="nav-item"><span class="icon">👁</span> Operators</a>
   </nav>
   <div class="sidebar-footer"><a href="#">⬡ Voir le site</a></div>
 </aside>
@@ -120,6 +110,3 @@
     </div>
   </div>
 </div>
-
-</body>
-</html>

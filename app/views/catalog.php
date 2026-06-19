@@ -1,3 +1,8 @@
+<form method="GET" action="/catalog" class="search-form">
+    <input type="text" name="search" placeholder="Rechercher un item..." value="<?= htmlspecialchars($search) ?>">
+    <button type="submit">Rechercher</button>
+</form>
+
 <div class="catalog-grid">
 <?php foreach($items as $items): ?>
 <article>
