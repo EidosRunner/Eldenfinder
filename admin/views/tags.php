@@ -1,104 +1,56 @@
-<aside class="sidebar">
-  <div class="sidebar-logo">
-    <span class="rune">ᛟ</span>
-    <div class="logo-title">EldenFinder</div>
-    <div class="logo-sub">Admin Panel</div>
-  </div>
-  <nav>
-    <div class="nav-section">Général</div>
-    <a href="/admin" class="nav-item"><span class="icon">⚔</span> Dashboard</a>
-    <div class="nav-section">Contenu</div>
-    <a href="/admin/item" class="nav-item"><span class="icon">🗡</span> Items</a>
-    <a href="/admin/tag" class="nav-item active"><span class="icon">🏷</span> Tags</a>
-    <a href="/admin/category" class="nav-item"><span class="icon">📂</span> Catégories</a>
-    <div class="nav-section">Communication</div>
-    <a href="/admin/message" class="nav-item"><span class="icon">📜</span> Messages<span class="nav-badge">3</span></a>
-    <div class="nav-section">Système</div>
-    <a href="/admin/operator" class="nav-item"><span class="icon">👁</span> Operators</a>
-  </nav>
-  <div class="sidebar-footer"><a href="#">⬡ Voir le site</a></div>
-</aside>
-
-<div class="main">
-  <div class="topbar">
-    <div class="topbar-title">EldenFinder / <span>Tags</span></div>
-    <div class="topbar-actions">
-      <div class="topbar-admin"><div class="avatar">A</div> Admin</div>
-    </div>
-  </div>
-
-  <div class="page-content">
-    <div class="page-header">
-      <div>
+<div class="page-header">
+    <div>
         <h1>Tags</h1>
-        <p>66 tags répartis sur 4 catégories</p>
-      </div>
-      <button class="btn btn-primary">+ Nouveau tag</button>
+        <p><?= count($tags) ?> tags</p>
+    </div>
+</div>
+
+<div class="two-col">
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr><th>ID</th><th>Label</th><th>Slug</th><th>Catégorie</th><th>Actions</th></tr>
+            </thead>
+            <tbody>
+                <?php if (empty($tags)): ?>
+                    <tr><td colspan="5"><div class="empty-state"><p>Aucun tag</p></div></td></tr>
+                <?php else: ?>
+                    <?php foreach ($tags as $tag): ?>
+                        <tr>
+                            <td style="color:var(--text3)">#<?= $tag['id'] ?></td>
+                            <td><span class="item-name"><?= htmlspecialchars($tag['label']) ?></span></td>
+                            <td><code style="font-size:12px;color:var(--text3)"><?= htmlspecialchars($tag['slug']) ?></code></td>
+                            <td><?= htmlspecialchars($tag['category_label'] ?? '—') ?></td>
+                            <td><a href="/admin/tag/delete/<?= $tag['id'] ?>" class="btn btn-danger btn-sm">Suppr.</a></td>
+                        </tr>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+            </tbody>
+        </table>
     </div>
 
-    <!-- Tags groupés par catégorie -->
-    <div style="display:flex;flex-direction:column;gap:24px;">
-
-      <!-- Items -->
-      <div class="table-container">
-        <div class="table-toolbar">
-          <span style="font-family:'Cinzel',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-dim);">⚔ Items</span>
-          <span style="font-size:12px;color:var(--text3);margin-left:8px;">57 tags</span>
-          <input type="text" class="search-input" placeholder="Filtrer les tags..." style="margin-left:auto;width:200px;">
-        </div>
-        <table>
-          <thead>
-            <tr><th>ID</th><th>Label</th><th>Slug</th><th>Actions</th></tr>
-          </thead>
-          <tbody>
-            <tr><td style="color:var(--text3)">#25</td><td><span class="item-name">Dagger</span></td><td><code style="font-size:12px;color:var(--text3)">dagger</code></td><td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Éditer</button><button class="btn btn-danger btn-sm">Suppr.</button></div></td></tr>
-            <tr><td style="color:var(--text3)">#26</td><td><span class="item-name">Straight Sword</span></td><td><code style="font-size:12px;color:var(--text3)">straight-sword</code></td><td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Éditer</button><button class="btn btn-danger btn-sm">Suppr.</button></div></td></tr>
-            <tr><td style="color:var(--text3)">#27</td><td><span class="item-name">Greatsword</span></td><td><code style="font-size:12px;color:var(--text3)">greatsword</code></td><td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Éditer</button><button class="btn btn-danger btn-sm">Suppr.</button></div></td></tr>
-            <tr><td style="color:var(--text3)">#33</td><td><span class="item-name">Katana</span></td><td><code style="font-size:12px;color:var(--text3)">katana</code></td><td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Éditer</button><button class="btn btn-danger btn-sm">Suppr.</button></div></td></tr>
-            <tr><td style="color:var(--text3)">#59</td><td><span class="item-name">Ash of War</span></td><td><code style="font-size:12px;color:var(--text3)">ash-of-war</code></td><td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Éditer</button><button class="btn btn-danger btn-sm">Suppr.</button></div></td></tr>
-            <tr><td style="color:var(--text3)">#60</td><td><span class="item-name">Talisman</span></td><td><code style="font-size:12px;color:var(--text3)">talisman</code></td><td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Éditer</button><button class="btn btn-danger btn-sm">Suppr.</button></div></td></tr>
-            <tr><td style="color:var(--text3)">#63</td><td><span class="item-name">Helm</span></td><td><code style="font-size:12px;color:var(--text3)">helm</code></td><td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Éditer</button><button class="btn btn-danger btn-sm">Suppr.</button></div></td></tr>
-            <tr><td style="color:var(--text3)">#64</td><td><span class="item-name">Chest Armor</span></td><td><code style="font-size:12px;color:var(--text3)">chest-armor</code></td><td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Éditer</button><button class="btn btn-danger btn-sm">Suppr.</button></div></td></tr>
-          </tbody>
-        </table>
-        <div class="table-footer"><span>Affichage 1–8 sur 57</span><div class="pagination"><a href="#" class="page-btn active">1</a><a href="#" class="page-btn">2</a><a href="#" class="page-btn">3</a></div></div>
-      </div>
-
-      <!-- Characters -->
-      <div class="table-container">
-        <div class="table-toolbar">
-          <span style="font-family:'Cinzel',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-dim);">👤 Characters</span>
-          <span style="font-size:12px;color:var(--text3);margin-left:8px;">3 tags</span>
-        </div>
-        <table>
-          <thead><tr><th>ID</th><th>Label</th><th>Slug</th><th>Actions</th></tr></thead>
-          <tbody>
-         </table>
-      </div>
-
-      <!-- Enemies -->
-      <div class="table-container">
-        <div class="table-toolbar">
-          <span style="font-family:'Cinzel',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-dim);">👾 Enemies</span>
-          <span style="font-size:12px;color:var(--text3);margin-left:8px;">3 tags</span>
-        </div>
-      </div>
-
-      <!-- Lore -->
-      <div class="table-container">
-        <div class="table-toolbar">
-          <span style="font-family:'Cinzel',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-dim);">📜 Lore</span>
-          <span style="font-size:12px;color:var(--text3);margin-left:8px;">3 tags</span>
-        </div>
-        <table>
-          <thead><tr><th>ID</th><th>Label</th><th>Slug</th><th>Actions</th></tr></thead>
-          <tbody>
-            <tr><td style="color:var(--text3)">#88</td><td><span class="item-name">Legacy Dungeon</span></td><td><code style="font-size:12px;color:var(--text3)">legacy-dungeon</code></td><td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Éditer</button><button class="btn btn-danger btn-sm">Suppr.</button></div></td></tr>
-            <tr><td style="color:var(--text3)">#89</td><td><span class="item-name">Region</span></td><td><code style="font-size:12px;color:var(--text3)">region</code></td><td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Éditer</button><button class="btn btn-danger btn-sm">Suppr.</button></div></td></tr>
-            <tr><td style="color:var(--text3)">#90</td><td><span class="item-name">Faction</span></td><td><code style="font-size:12px;color:var(--text3)">faction</code></td><td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Éditer</button><button class="btn btn-danger btn-sm">Suppr.</button></div></td></tr>
-          </tbody>
-        </table>
-      </div>
+    <div class="form-section" style="height:fit-content;">
+        <div class="form-section-title">Ajouter un tag</div>
+        <form method="POST" action="/admin/tag/create">
+            <div style="display:flex;flex-direction:column;gap:14px;">
+                <div class="form-group">
+                    <label>Label <span class="required">*</span></label>
+                    <input type="text" name="label" class="form-input" placeholder="ex: Katana">
+                </div>
+                <div class="form-group">
+                    <label>Slug <span class="required">*</span></label>
+                    <input type="text" name="slug" class="form-input" placeholder="ex: katana">
+                </div>
+                <div class="form-group">
+                    <label>Catégorie</label>
+                    <select name="category_id" class="form-select">
+                        <?php foreach ($categories as $cat): ?>
+                            <option value="<?= $cat['id'] ?>"><?= htmlspecialchars($cat['label']) ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="justify-content:center;">Créer</button>
+            </div>
+        </form>
     </div>
-  </div>
 </div>
