@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jun 17, 2026 at 01:47 PM
+-- Generation Time: Jun 23, 2026 at 11:41 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -108,7 +108,7 @@ CREATE TABLE `item` (
 
 INSERT INTO `item` (`id`, `slug`, `label`, `short_description`, `content`, `main_image`, `status`, `created_at`, `updated_at`, `category_id`, `theme_id`, `skill`, `skill FP cost`, `weight`, `upgrade material`, `base_damage`) VALUES
 (4, 'dark-moon-greatsword', 'Dark Moon Greatsword', 'Légendaire épée à deux mains infusée de la lune sombre.', 'Une épée colossale offerte par Ranni la Sorcière. Elle inflige des dégâts magiques et de glace supplémentaires. Son skill invoque le froid lunaire sur la lame.', 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dark_moon_greatsword_weapon_elden_ring_wiki_guide_200px.png', 'published', NULL, NULL, 4, 1, 'Moonlight Greatsword', 32, 10, 'Somber Smithing Stone', 82),
-(5, 'rivers-of-blood', 'Rivers of Blood', 'Katana maudit qui répand le saignement en volutes de sang.', 'Katana à la lame tachée de sang obtenu auprès de Bloody Finger Okina. Inflige des dégâts de saignement redoutables. Son skill projette des lacérations de sang à distance.', NULL, 'published', NULL, NULL, 4, 1, 'Corpse Piler', 17, 7, 'Somber Smithing Stone', 0),
+(5, 'rivers-of-blood', 'Rivers of Blood', 'Katana maudit qui répand le saignement en volutes de sang.', 'Katana à la lame tachée de sang obtenu auprès de Bloody Finger Okina. Inflige des dégâts de saignement redoutables. Son skill projette des lacérations de sang à distance.', 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rivers_of_blood_katana_weapon_elden_ring_wiki_guide_200px.png', 'published', NULL, NULL, 4, NULL, 'Corpse Piler', NULL, 7, '', 0),
 (6, 'blasphemous-blade', 'Blasphemous Blade', 'Épée hérétique forgée dans la chair des dieux.', 'Grande épée obtenue en transposant l\'âme de Rykard, Seigneur du Blasphème. Elle soigne le porteur à chaque ennemi tué et projette des flammes lors de son skill.', NULL, 'published', NULL, NULL, 4, 1, 'Taker\'s Flames', 30, 13, 'Somber Smithing Stone', 0),
 (7, 'moonveil', 'moonveil', 'Katana aux reflets de lune, redoutable pour les mages guerriers.', 'Katana magique obtenu dans les Mines de Gael Tunnel. Parfait pour les builds Intelligence. Son skill projette un flash de lame lumineux capable de briser la garde.', NULL, 'published', NULL, NULL, 4, 1, 'Transient Moonlight', 15, 6, 'Somber Smithing Stone', 0),
 (8, 'starscourge-greatsword', 'starscourge-greatsword', 'Épée gravitationnelle du Seigneur des Étoiles Radahn.', 'Arme légendaire obtenue en transposant l\'âme de Starscourge Radahn. Peut être maniée en double en combinant deux épées. Son skill génère un vortex gravitationnel.', NULL, 'published', NULL, NULL, 4, 1, 'Starcaller Cry', NULL, 18, 'Somber Smithing Stone', 0),
@@ -116,7 +116,8 @@ INSERT INTO `item` (`id`, `slug`, `label`, `short_description`, `content`, `main
 (10, 'Sword of Night and Flame', 'Sword of Night and Flame', 'Épée légendaire maîtrisant à la fois la magie et le feu.', 'Épée droite trouvée dans le Château Caria. Elle possède deux skills distincts : un rayon de lune magique et une rafale de flammes. Idéale pour les builds hybrides Intelligence/Foi.', NULL, 'published', NULL, NULL, 4, 1, 'Night-and-Flame Stance', 32, 4, 'Somber Smithing Stone', 0),
 (11, 'Eleonora\'s Poleblade', 'Eleonora\'s Poleblade', 'Hallebarde jumelle portée par la Bloody Finger Eleonora.', 'Arme double obtenue en vainquant Eleonora. Inflige des dégâts de feu et de saignement simultanément. Son skill enchaîne une danse de lames tourbillonnantes dévastatrice.', NULL, 'published', NULL, NULL, 4, 1, 'Bloodblade Dance', 23, 8, 'Somber Smithing Stone', 0),
 (12, 'Ruins Greatsword', 'Ruins Greatsword', 'Fragment de ruine gravitationnel d\'une puissance écrasante', 'Épée colossale obtenue en vainquant les Valiant Gargoyles. L\'une des meilleures armes pour les builds Force. Son skill génère une onde de choc gravitationnelle au sol.', NULL, 'published', NULL, NULL, 4, 1, 'Wave of Destruction', 30, 23, 'Somber Smithing Stone', 0),
-(13, 'Hand of Malenia', 'Hand of Malenia', ' Katana prothétique de Malenia, Lame de Miquella', 'Arme légendaire obtenue en transposant l\'âme de Malenia. Katana capable de soigner le porteur à chaque coup porté, même bloqué. Son skill reproduit le légendaire Scarlet Aeonia.', NULL, 'published', NULL, NULL, 4, 1, 'Waterfowl Dance', 26, 7, 'Somber Smithing Stone', 0);
+(13, 'Hand of Malenia', 'Hand of Malenia', ' Katana prothétique de Malenia, Lame de Miquella', 'Arme légendaire obtenue en transposant l\'âme de Malenia. Katana capable de soigner le porteur à chaque coup porté, même bloqué. Son skill reproduit le légendaire Scarlet Aeonia.', NULL, 'published', NULL, NULL, 4, 1, 'Waterfowl Dance', 26, 7, 'Somber Smithing Stone', 0),
+(14, 'Falchion', 'Falchion', 'A curved sword with a single-sided blade', 'A curved sword with a single-sided blade. Delivers slashing attacks with its sharp blade, but is ineffective against thick armor and hides covered in tough scales.\r\n\r\nWielders of the weapon employ a unique style that enhances attacks with spinning motions.', 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/falchion_curved_sword_weapon_elden_ring_wiki_guide_200px.png', 'draft', NULL, NULL, NULL, NULL, 'Spinning Slash', 6, 4, 'Smithing Stone', 109);
 
 -- --------------------------------------------------------
 
@@ -285,16 +286,17 @@ CREATE TABLE `user` (
   `id` int(10) UNSIGNED NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `created_at` datetime DEFAULT current_timestamp()
+  `created_at` datetime DEFAULT current_timestamp(),
+  `role` varchar(20) NOT NULL DEFAULT 'user'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `email`, `password`, `created_at`) VALUES
-(1, 'me@gmail.com', '$2y$10$z2u3bRFW70oZpq4svpeM/u14l7hKqbpOzOjmYWuaBWkBNDRhwmyZ2', '2026-06-11 14:01:23'),
-(2, 'clinetchase@gmail.com', '$2y$10$wEIxogGWWL.ZKUZ5jFz5TeGrZw99fQ/A/od0hFqqtKo7EsEUqNmvy', '2026-06-13 11:30:47');
+INSERT INTO `user` (`id`, `email`, `password`, `created_at`, `role`) VALUES
+(1, 'me@gmail.com', '$2y$10$z2u3bRFW70oZpq4svpeM/u14l7hKqbpOzOjmYWuaBWkBNDRhwmyZ2', '2026-06-11 14:01:23', 'user'),
+(2, 'clinetchase@gmail.com', '$2y$10$wEIxogGWWL.ZKUZ5jFz5TeGrZw99fQ/A/od0hFqqtKo7EsEUqNmvy', '2026-06-13 11:30:47', 'admin');
 
 --
 -- Indexes for dumped tables
@@ -404,7 +406,7 @@ ALTER TABLE `favorite`
 -- AUTO_INCREMENT for table `item`
 --
 ALTER TABLE `item`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `message`
